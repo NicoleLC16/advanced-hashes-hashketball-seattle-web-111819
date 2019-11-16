@@ -235,7 +235,7 @@ end
 
 def long_name_steals_a_ton?
   most_steals = 0
-  long_name: nil
+  long_name = nil
   game_hash.each do |home_away, team|
     team[:players].each do |each_player|
       each_player.each do |key, value|
@@ -247,6 +247,7 @@ def long_name_steals_a_ton?
       end
     end
   end
+ most_steals == long_name
 end
 
 
