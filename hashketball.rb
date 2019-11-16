@@ -109,7 +109,7 @@ end
 def num_points_scored(player_name)
   game_hash.each do |home_away, team|
     team[:players].each do |player_array|
-      player_array.each do |name, data|
+      player_array.each do |key, value|
        if player_array[:player_name] == player_name
          return player_array[:points]
         end
@@ -234,7 +234,13 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  
+  game_hash.each do |home_away, team|
+    team[:players].each do |each_player|
+      each_player.each do |key, value|
+        
+      end
+    end
+  end
 end
 
 
